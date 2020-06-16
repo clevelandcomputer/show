@@ -1,4 +1,5 @@
 //Contributors Darius Chappell, Safea Patrick Mansa-Musa, Cynthia Evans
+// & Ashley Storer 
 
 //Kata 1
 const content = document.querySelector('main')
@@ -112,9 +113,76 @@ let kata6 = document.createElement('h1')
   }
 
   //Kata 7
+
+  let counter7 = 20
+    
+ let kata7 = document.createElement('h1')
+ kata7.append('Kata 7')
+    content.append(kata7)
+    
+  while (counter7 >= 1) {
+      if(counter7 % 2 === 0){
+        let kata7Heading = document.createElement('p')
+    content.append(kata7Heading)
+    kata7Heading.append(counter7)
+      } 
+    
+   
+    counter7 -= 1
+  }
+
   //Kata 8
+let coutner8 = 20
+    
+let kata8 = document.createElement('h1')
+kata8.append('Kata 8')
+   content.append(kata8)
+   
+ while (coutner8 >= 1) {
+     if(coutner8 % 2 === 1){
+       let kata8Heading = document.createElement('p')
+   content.append(kata8Heading)
+   kata8Heading.append(coutner8)
+     } 
+   
+  
+   coutner8 -= 1
+ }
+
   //Kata 9
+  let counter9 = 100
+    
+  let kata9 = document.createElement('h1')
+  kata9.append('Kata 9')
+     content.append(kata9)
+     
+   while (counter9 > 4) {
+       
+      let kata9Heading = document.createElement('p')
+     content.append(kata9Heading)
+     kata9Heading.append(counter9)
+     
+    
+     counter9 -= 5
+   }
+
   //Kata 10
+
+  let counter10 = 10
+    
+let kata10 = document.createElement('h1')
+kata10.append('Kata 10')
+   content.append(kata10)
+   
+ while (counter10 >= 1) {
+     let newCounter = counter10*counter10
+    let kata5Heading = document.createElement('p')
+   content.append(kata5Heading)
+   kata5Heading.append(newCounter)
+     
+  
+   counter10 -= 1
+ }
 
   //Kata 11
 
@@ -254,23 +322,105 @@ let kata18Heading = document.createElement('p')
 content.append(kata18Heading)
 kata18Heading.append(answer2)
  
+
 //Kata 19
 
 let kata19 = document.createElement('h1')
     kata19.append('Kata 19')
     content.append(kata19)
-    let startOut = 100 + 5
-    let solve = startOut
     
    for(let index19 = 0; index19 < 20; index19++) {
+    
+       
+ let kata19Heading = document.createElement('div')
+ 
+    
+    content.append(kata19Heading)
+    
+  
+   }
+
+//Kata 20
+
+let kata20 = document.createElement('h1')
+    kata20.append('Kata 20')
+    content.append(kata20)
+    let startOut = 105
+    let solve = startOut
+    
+   for(let index20 = 0; index20 < 20; index20++) {
     
        let newSolve = solve.toString() + 'px'
        
 
-    let kata19Heading = document.createElement('div')
-    kata19Heading.style.width = newSolve
-    // div.id = 'box'
-    content.append(kata19Heading)
+    let kata20Heading = document.createElement('div')
+    kata20Heading.style.width = newSolve
+    
+    content.append(kata20Heading)
     
     solve += 5
    }
+
+   //Kata 21
+
+let kata21 = document.createElement('h1')
+kata21.append('Kata 21')
+content.append(kata21)
+
+
+for(let index21 = 0; index21 < sampleArray.length; index21++) {
+   let arrayNum = sampleArray[index21]
+   let arraySolve = arrayNum.toString() + 'px'
+   
+
+let kata21Heading = document.createElement('div')
+kata21Heading.style.width = arraySolve
+
+content.append(kata21Heading)
+
+}
+
+   //Kata 22
+
+   let kata22 = document.createElement('h1')
+   kata22.append('Kata 22')
+   content.append(kata22)
+   
+   
+   for(let index22 = 0; index22 < sampleArray.length; index22++) {
+      let arrayNum = sampleArray[index22]
+      let arraySolve = arrayNum.toString() + 'px'
+      
+   
+   let kata22Heading = document.createElement('div')
+   
+   kata22Heading.style.width = arraySolve
+   if(index22 % 2 === 0) {
+       kata22Heading.style.backgroundColor = 'red'
+   }
+ 
+   content.append(kata22Heading)
+   
+   }
+//Kata 23
+
+let kata23 = document.createElement('h1')
+kata23.append('Kata 23')
+content.append(kata23)
+
+
+for(let index23 = 0; index23 < sampleArray.length; index23++) {
+   let arrayNum = sampleArray[index23]
+   let arraySolve = arrayNum.toString() + 'px'
+   
+
+let kata23Heading = document.createElement('div')
+
+kata23Heading.style.width = arraySolve
+if(sampleArray[index23] % 2 === 0) {
+    kata23Heading.style.backgroundColor = 'red'
+}
+
+content.append(kata23Heading)
+
+}
